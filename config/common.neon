@@ -30,3 +30,13 @@ migrations:
     driver: mysql               # pgsql or mysql
     dbal: nette               # nextras, nette, doctrine or dibi
     withDummyData: %debugMode%
+
+search:
+    repositories:
+        in: '%appDir%/Model/Repositories'
+        classes:
+            - *Repository
+    components:
+        in: '%appDir%/Components'
+        classes:
+            - *Factory

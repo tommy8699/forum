@@ -1,4 +1,17 @@
 
 {block content}
+<nav class="navbar bg-dark">
+    <a class="navbar-brand text-primary ml-3">Programatorske Forum</a>
 
-<h1>Toto je zoznam kategorii</h1>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Hladat" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Hladat</button>
+    </form></nav>
+
+
+
+<div class="table-responsive-sm mt-4 mr-4 ml-4">
+    {control postCategoryGridControl}
+</div>
+
+
